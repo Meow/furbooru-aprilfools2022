@@ -6,13 +6,13 @@
 // ///// SECTION 1 - MAIN COLORS /////
 // ///////////////////////////////////
 
-$background_color: #1d1924;
-$page_background_color: #15121a;
+$background_color: #20252a;
+$page_background_color: #222222;
 $foreground_color: #dadada;
 
-$base_color: #785b99;
+$base_color: #c7363e;
 
-$primary_light_color: #46266b;
+$primary_light_color: #9c2b30;
 $success_light_color: #0f330f;
 $danger_light_color: #66211f;
 $warning_light_color: #7d4825;
@@ -22,22 +22,22 @@ $destroyed_content_color_odd: saturate(darken($destroyed_content_color, 5%), 10%
 
 $meta_color: #191f2a;
 
-$header_color: #36274e;
-$header_field_color: #241c2c;
-$header_secondary_color: #251c36;
+$header_color: darken($base_color, 20%);
+$header_field_color: darken($base_color, 30%);
+$header_secondary_color: darken(desaturate($base_color, 15%), 30%);
 $header_admin_color: #3b1d1d;
 
-$block_header_color: #3a314e;
+$block_header_color: darken(desaturate($base_color, 15%), 15%);
 $block_header_link_text_color: lighten($block_header_color, 50%);
 
-$block_header_light_color: #2d253c;
+$block_header_light_color: desaturate($base_color, 15%);
 $block_header_light_link_text_color: lighten($block_header_light_color, 50%);
 
-$border_color: #332941;
+$border_color: darken(saturate($base_color, 15%), 30%);
 
-$media_box_color: #311e49;
+$media_box_color: darken(desaturate($base_color, 15%), 30%);
 
-$link_color: #9747cc;
+$link_color: $base_color;
 $link_hover_color: lighten($link_color, 30%);
 
 $fave_color: #a18e27;

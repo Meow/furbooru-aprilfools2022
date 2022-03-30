@@ -429,12 +429,23 @@ i.favicon-home {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 1em;
-  height: 1em;
+  min-width: 2rem;
+  height: 2rem;
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 6px;
+}
+
+i.favicon-large {
+  background-image: url("/favicon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 // changelog

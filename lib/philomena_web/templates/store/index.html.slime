@@ -1,0 +1,26 @@
+.flex.flex--centered
+  i.favicon-large 
+  h1 Even Worse Kobold Store
+
+.block
+  .block__header
+    span.block__header__title Special Deal
+  .block__content
+    p As part of the merger between Furbooru and Even Worse Kobold, Inc. we have implemented this store page to allow the Furbooru userbase an opportunity to buy any of our Silicone Sculpture Paw products in comfort of your favorite image hosting site!
+    p We're also running a limited-time promotion to celebrate this wonderful synergy! Simply click "Add to cart" and we'll automatically apply the 20% discount to the price at checkout. Offer only applies to purchases made on this site directly and won't apply if you order from Even Worse Kobold directly.
+
+.block
+  .block__header.block__success
+    span.block__header__title Products
+  .block__content
+    .products
+      = for {path, name} <- products do
+        .flex.flex--centered.flex--column
+          .media-box__content.media-box__content--small
+            picture
+              img src=path alt=name
+          br
+          span: strong = name
+          span: strong = price
+          br
+          = button_to "Add to cart", Routes.store_path(@conn, :create), method: "post", class: "button button--state-success"

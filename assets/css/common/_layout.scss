@@ -430,3 +430,10 @@ figure {
 .minimal__message__header {
   margin: 0 0 10px 0;
 }
+
+.products {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 2rem;
+}

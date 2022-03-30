@@ -537,6 +537,8 @@ defmodule PhilomenaWeb.Router do
       resources "/history", Page.HistoryController, only: [:index]
     end
 
+    resources "/store", StoreController, only: [:index, :create]
+
     resources "/dnp", DnpEntryController, only: [:index, :show]
     resources "/staff", StaffController, only: [:index]
     resources "/channels", ChannelController, only: [:index, :show]
